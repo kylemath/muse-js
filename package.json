@@ -9,6 +9,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
+    "watch": "tsc --watch",
     "format": "prettier --write src/**.ts **/*.json",
     "precommit": "lint-staged",
     "prepublish": "npm run build",
@@ -37,7 +38,9 @@
   },
   "dependencies": {
     "@types/web-bluetooth": "^0.0.2",
-    "rxjs": "^6.0.0 || ^5.6.0-forward-compat.4"
+    "osc-js": "^2.4.1",
+    "rxjs": "^6.0.0 || ^5.6.0-forward-compat.4",
+    "ws": "^8.18.3"
   },
   "jest": {
     "moduleFileExtensions": [

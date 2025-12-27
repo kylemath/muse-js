@@ -1,0 +1,157 @@
+USB:
+
+    USB 3.1 Bus:
+
+      Host Controller Driver: AppleT8132USBXHCI
+
+    USB 3.1 Bus:
+
+      Host Controller Driver: AppleT8132USBXHCI
+
+    USB 3.1 Bus:
+
+      Host Controller Driver: AppleT8132USBXHCI
+
+    USB 3.1 Bus:
+
+      Host Controller Driver: AppleT8132USBXHCI
+
+    USB 3.1 Bus:
+
+      Host Controller Driver: AppleEmbeddedUSBXHCIASMedia3142
+      PCI Device ID: 0x2142 
+      PCI Revision ID: 0x0000 
+      PCI Vendor ID: 0x1b21 
+
+        USB2 Hub:
+
+          Product ID: 0x8009
+          Vendor ID: 0x05ac (Apple Inc.)
+          Version: 71.04
+          Serial Number: 7423J07
+          Speed: Up to 480 Mb/s
+          Manufacturer: Apple
+          Location ID: 0x08300000 / 2
+          Current Available (mA): 500
+          Current Required (mA): 0
+          Extra Operating Current (mA): 0
+          Built-In: Yes
+
+            USB Receiver:
+
+              Product ID: 0xc52b
+              Vendor ID: 0x046d  (Logitech Inc.)
+              Version: 24.11
+              Speed: Up to 12 Mb/s
+              Manufacturer: Logitech
+              Location ID: 0x08330000 / 3
+              Current Available (mA): 500
+              Current Required (mA): 98
+              Extra Operating Current (mA): 0
+
+        USB3 Gen2 Hub:
+
+          Product ID: 0x800a
+          Vendor ID: 0x05ac (Apple Inc.)
+          Version: 71.04
+          Serial Number: 7423J07
+          Speed: Up to 10 Gb/s
+          Manufacturer: Apple
+          Location ID: 0x08100000 / 1
+          Current Available (mA): 900
+          Current Required (mA): 0
+          Extra Operating Current (mA): 0
+          Built-In: Yes
+
+    USB 3.1 Bus:
+
+      Host Controller Driver: AppleUSBXHCITR
+      PCI Device ID: 0x15f0 
+      PCI Revision ID: 0x0006 
+      PCI Vendor ID: 0x8086 
+
+        USB3 Gen2 Hub:
+
+          Product ID: 0x101e
+          Vendor ID: 0x05ac (Apple Inc.)
+          Version: 52.12
+          Serial Number: D2H9DCWYHK
+          Speed: Up to 10 Gb/s
+          Manufacturer: Apple
+          Location ID: 0x04300000 / 1
+          Current Available (mA): 900
+          Current Required (mA): 0
+          Extra Operating Current (mA): 0
+
+        USB2 Hub:
+
+          Product ID: 0x101d
+          Vendor ID: 0x05ac (Apple Inc.)
+          Version: 52.12
+          Serial Number: D2H9DCWYHK
+          Speed: Up to 480 Mb/s
+          Manufacturer: Apple
+          Location ID: 0x04100000 / 2
+          Current Available (mA): 500
+          Current Required (mA): 0
+          Extra Operating Current (mA): 0
+
+            Studio Display:
+
+              Product ID: 0x1114
+              Vendor ID: 0x05ac (Apple Inc.)
+              Version: 2.01
+              Serial Number: 00008030-001A45EE3E82802E
+              Speed: Up to 480 Mb/s
+              Manufacturer: Apple Inc.
+              Location ID: 0x04140000 / 3
+              Current Available (mA): 500
+              Current Required (mA): 500
+              Extra Operating Current (mA): 0
+
+    USB 3.1 Bus:
+
+      Host Controller Driver: AppleUSBXHCITR
+      PCI Device ID: 0x15f0 
+      PCI Revision ID: 0x0006 
+      PCI Vendor ID: 0x8086 
+
+        USB3 Gen2 Hub:
+
+          Product ID: 0x101e
+          Vendor ID: 0x05ac (Apple Inc.)
+          Version: 52.12
+          Serial Number: CMJ73J7Q05
+          Speed: Up to 10 Gb/s
+          Manufacturer: Apple
+          Location ID: 0x05300000 / 1
+          Current Available (mA): 900
+          Current Required (mA): 0
+          Extra Operating Current (mA): 0
+
+        USB2 Hub:
+
+          Product ID: 0x101d
+          Vendor ID: 0x05ac (Apple Inc.)
+          Version: 52.12
+          Serial Number: CMJ73J7Q05
+          Speed: Up to 480 Mb/s
+          Manufacturer: Apple
+          Location ID: 0x05100000 / 2
+          Current Available (mA): 500
+          Current Required (mA): 0
+          Extra Operating Current (mA): 0
+
+            Studio Display:
+
+              Product ID: 0x1114
+              Vendor ID: 0x05ac (Apple Inc.)
+              Version: 2.01
+              Serial Number: 00008030-00163CA62122202E
+              Speed: Up to 480 Mb/s
+              Manufacturer: Apple Inc.
+              Location ID: 0x05140000 / 3
+              Current Available (mA): 500
+              Current Required (mA): 500
+              Extra Operating Current (mA): 0
+

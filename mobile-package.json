@@ -1,0 +1,24 @@
+{
+  "name": "mobile-muse-visualization",
+  "version": "1.0.0",
+  "description": "Mobile-optimized Muse brain visualization server",
+  "main": "mobile-muse-server.js",
+  "scripts": {
+    "start": "node mobile-muse-server.js",
+    "mobile": "node mobile-muse-server.js"
+  },
+  "dependencies": {
+    "ws": "^8.14.2"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "keywords": ["muse", "eeg", "brain", "visualization", "mobile", "osc", "websocket"],
+  "author": "Kyle Mathewson",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/muse-js.git"
+  },
+  "homepage": "https://github.com/your-username/muse-js#readme"
+}
