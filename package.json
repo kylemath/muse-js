@@ -13,7 +13,6 @@
     "build:browser": "npx esbuild dist/esm/muse.js --bundle --format=iife --global-name=muse --outfile=dist/muse-browser.js",
     "format": "prettier --write src/**.ts **/*.json",
     "precommit": "lint-staged",
-    "prepare": "npm run build",
     "prepublish": "npm run build",
     "start": "node demo/fuse",
     "lint": "tslint src/**/*.ts demo/src/**/*.ts",
