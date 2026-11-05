@@ -413,12 +413,18 @@ export class MuseClient {
                 } else if (sub.type === 'optics') {
                     const nSamples = sub.values[0] ? sub.values[0].length : 3;
                     const tracked = this.trackAthenaSubpacket(sub.tag, sub.index, nSamples, ATHENA_OPTICS_SAMPLE_RATE);
-                    const maxPpg = Math.min(sub.values.length, 3);
-                    for (let ch = 0; ch < maxPpg; ch++) {
+                    const mappedChannels =
+                        sub.values.length >= 16
+                            ? [sub.values[14], sub.values[6], sub.values[12]]
+                            : sub.values.slice(0, 3);
+                    for (let ch = 0; ch < mappedChannels.length; ch++) {
+                        if (!mappedChannels[ch]) {
+                            continue;
+                        }
                         ppgSubject.next({
                             index: tracked.unwrappedCount,
                             ppgChannel: ch,
-                            samples: sub.values[ch],
+                            samples: mappedChannels[ch],
                             timestamp: tracked.timestamp,
                         });
                     }
@@ -469,7 +475,12 @@ export class MuseClient {
     }
 
     private async startAthena() {
-        const preset = this.preset || (this.enableAux ? 'p1045' : ATHENA_DEFAULT_PRESET);
+        const defaultAthenaPreset = this.enablePpg
+            ? 'p1041'
+            : this.enableAux
+            ? 'p1045'
+            : ATHENA_DEFAULT_PRESET;
+        const preset = this.preset || defaultAthenaPreset;
         this.preset = preset;
         const sequence: Array<[string, number]> = [
             ['v6', 50],

@@ -563,12 +563,17 @@ var MuseClient = /** @class */ (function () {
                                 else if (sub.type === 'optics') {
                                     var nSamples = sub.values[0] ? sub.values[0].length : 3;
                                     var tracked = _this.trackAthenaSubpacket(sub.tag, sub.index, nSamples, ATHENA_OPTICS_SAMPLE_RATE);
-                                    var maxPpg = Math.min(sub.values.length, 3);
-                                    for (var ch = 0; ch < maxPpg; ch++) {
+                                    var mappedChannels = sub.values.length >= 16
+                                        ? [sub.values[14], sub.values[6], sub.values[12]]
+                                        : sub.values.slice(0, 3);
+                                    for (var ch = 0; ch < mappedChannels.length; ch++) {
+                                        if (!mappedChannels[ch]) {
+                                            continue;
+                                        }
                                         ppgSubject.next({
                                             index: tracked.unwrappedCount,
                                             ppgChannel: ch,
-                                            samples: sub.values[ch],
+                                            samples: mappedChannels[ch],
                                             timestamp: tracked.timestamp,
                                         });
                                     }
@@ -637,7 +642,7 @@ var MuseClient = /** @class */ (function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        preset = this.preset || (this.enableAux ? 'p1045' : ATHENA_DEFAULT_PRESET);
+                        preset = this.preset || (this.enablePpg ? 'p1041' : (this.enableAux ? 'p1045' : ATHENA_DEFAULT_PRESET));
                         this.preset = preset;
                         sequence = [
                             ['v6', 50],
